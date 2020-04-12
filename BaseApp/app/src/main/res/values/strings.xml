@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BaseApp</string>
+    <string name="button1">글자 나타내기</string>
+    <string name="button2">홈페이지 열기</string>
+    <string name="RadioButton1">아이콘1</string>
+    <string name="RadioButton2">아이콘2</string>
+</resources>
