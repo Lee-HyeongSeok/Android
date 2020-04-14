@@ -22,8 +22,7 @@
 				* 텍스트 크기의 단위로 많이 사용한다.
 				* 배율에 무관하게 텍스트 크기를 나타낸다.
 				* dp인 경우 시스템 배율이 변경되면 따라서 크기가 변경된다.
-<pre>
-<code>
+```xml
 // LinearLayout : 위젯의 순차적인 배열을 의미한다.
 
 <LinearLayout 
@@ -46,5 +45,5 @@
         android:textSize="20sp"
         />
 </LinearLayout>
-</code>
-</pre>
+
+```
