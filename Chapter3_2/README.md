@@ -2,13 +2,12 @@
 #### * 출처 : Android Studio를 활용한 안드로이드 프로그래밍   
 
 #### * activity_main.xml   
-
-* 일반 RadioButton
-		* 독립적인 동작으로 동시 선택이 가능하다.
-		* RadioGroup과 같이 여러 위젯 중 하나만을 선택하려면 위젯이 선택되었을 때 선택된 위젯 이외는 setChecked(false)로 안보이게 설정해야 한다.
-			* ex ) RBtn1, RBtn2 둘 중 RBtn1을 선택했을 때 
-			* RBtn1.setChecked(true);
-			* RBtn2.setChecked(false); 
+		* 일반 RadioButton   
+				* 독립적인 동작으로 동시 선택이 가능하다.   
+				* RadioGroup과 같이 여러 위젯 중 하나만을 선택하려면 위젯이 선택되었을 때 선택된 위젯 이외는 setChecked(false)로 안보이게 설정해야 한다.
+						* ex ) RBtn1, RBtn2 둘 중 RBtn1을 선택했을 때 
+						* RBtn1.setChecked(true);
+						* RBtn2.setChecked(false); 
 ```xml
 <RadioButton
         android:layout_width="wrap_content"
@@ -26,13 +25,13 @@
         />
 ```
 
-* RadioGroup을 통한 그룹 지정 버튼
-		* 동시 지정이 아닌 하나의 위젯만 지정된다.
-		* 그룹 객체 선언을 통해 하나의 그룹 객체에서 리스너를 통해 뷰를 생성한다.
-		* ex) MainActivity.java에서
-		* RadioGroup rGroup;
-		* rGroup = (RadioGroup)findViewById(R.id.RGroup1); // activity_main에서의 그룹 아이디를 가져온다.
-		* RadioGroup.OnCheckedChangeListener rGroupListener = new RadioGroup.OnCheckedChangeListener()...
+		* RadioGroup을 통한 그룹 지정 버튼   
+				* 동시 지정이 아닌 하나의 위젯만 지정된다.
+				* 그룹 객체 선언을 통해 하나의 그룹 객체에서 리스너를 통해 뷰를 생성한다.   
+				* ex) MainActivity.java에서   
+				* RadioGroup rGroup;   
+				* rGroup = (RadioGroup)findViewById(R.id.RGroup1); // activity_main에서의 그룹 아이디를 가져온다.   
+				* RadioGroup.OnCheckedChangeListener rGroupListener = new RadioGroup.OnCheckedChangeListener()...   
 ```xml
 <RadioGroup
         android:layout_width="match_parent"
@@ -64,9 +63,9 @@
 </RadioGroup>
 ```   
 
-* ImageView 위젯   
-		* 불러온 아이콘 사진을 출력한다.
-		* fitXY = 가로, 세로가 정해진 사이즈에 맞게 맞추어진다.
+		* ImageView 위젯   
+				* 불러온 아이콘 사진을 출력한다.
+				* fitXY = 가로, 세로가 정해진 사이즈에 맞게 맞추어진다.
 
 ```xml
 <ImageView
@@ -76,8 +75,8 @@
         />
 ```   
 
-* ImageButton   
-		* 불러온 아이콘 이미지로 되어있는 버튼 객체를 만든다.
+		* ImageButton   
+				* 불러온 아이콘 이미지로 되어있는 버튼 객체를 만든다.
 ```xml
 <ImageButton
         android:layout_width="match_parent"
