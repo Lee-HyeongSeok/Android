@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <AutoCompleteTextView
+        android:id="@+id/autoText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="2"
+        android:completionHint="selection"
+        android:hint="자동완성 텍스트 뷰"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="멀티 자동완선 텍스트 뷰"
+        android:completionHint="selection"
+        android:completionThreshold="2"
+        />
+
+
+
+</LinearLayout>
